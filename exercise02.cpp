@@ -1,13 +1,17 @@
 #include <iostream>
 using namespace std;
 
+//Define Function
 int volume(int height, int width, int length);
 
 int main() {
+
+    //Define Variables
     int box1Height, box1Width, box1Length;
     int box2Height, box2Width, box2Length;
     int totalVolume, totalSurface;
-    
+
+    //Getting  input from the  user 
     cout << "Enter Box 1 Height : ";
     cin >> box1Height;
     cout << "Enter Box 1 Width : ";
@@ -24,10 +28,19 @@ int main() {
     
     totalVolume = volume(box1Height, box1Width, box1Length)
              + volume(box2Height, box2Width, box2Length);
-             
+
+  //Printing Outputs
     cout << "Volume of Box is " << totalVolume << endl;
     
     return 0;
 }
+ // Implement the Volume() function here
 
-// Implement the Volume() function here
+int volume(int height, int width, int length){
+
+  int x;
+
+  x = height * width * length;
+
+  return x;
+}
